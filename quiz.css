@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: rgb(213, 219, 225);
+    z-index: -1;
+}
+#quiz-container{
+
+    width: 70%;
+    height: 85vh;
+    border: 5px solid gray;
+    margin: 5% auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+
+}
+img{
+    scale: 0.5;
+    margin-bottom: -5rem;
+    margin-top: -5rem;
+}
+#helloUser,h3{
+
+    color: rgb(0, 208, 255);
+}
+#enter{
+    padding-inline: 20px;
+    background-color: rgb(0, 208, 255);
+    border-color: rgb(0, 208, 255);
+    cursor: pointer;
+    height:1.5rem;
+}
+h3{
+    font-size: x-large;
+}
+
+#name{
+
+    width: 30%;
+    height: 1.5rem;
+
+}
+h5,h3{
+    margin-top: 1.5rem;
+}
+
+#Category-container{
+    
+ margin-top: 2rem;
+ margin-left: 20%;
+ margin-bottom: 10%;
+ display: grid;
+ grid-template-columns: auto auto;
+ row-gap: 2rem;
+ /* column-gap: 5rem; */
+ 
+
+ 
+ 
+}
+#Category-container button{
+
+    width: 50%;
+    cursor: pointer;
+    padding: 0.2rem;
+    background-color: rgb(0, 208, 255);
+    border-radius: 0.5rem;
+    border-color: rgb(0, 208, 255);
+    font-size: large;
+    
+
+}
+
+.category-heading {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  /* margin-left: 10rem; */
+  display: flex;
+  justify-content: center;
+}
+
+
+.timer{
+
+
+    margin-top: 5%;
+
+}
+#Score{
+  margin-bottom: %;
+    margin-left: 85%;
+ 
+}
+.questionBg {
+  background-color: #f0f8ff; 
+  padding: 0rem 4rem 2rem;
+  border-radius: 8px;
+  margin-left: 15%;
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  
+  
+}
+
+.optionbtn{
+
+    /* display: flex; */
+    /* flex-direction: column column; */
+   display: grid;
+   /* grid-template-columns: auto auto; */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap;
+    flex: 1 1 1 150px; */
+    margin-top: 2rem;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 65%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: bisque;
+    cursor: pointer;
+    font-size: medium;
+    
+}
+
+.optionbtn.active{
+
+    background-color: greenyellow;
+    
+}
+.questyle{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.nextbtnStyle{
+
+    margin-left: 45%;
+    margin-top: 7%;
+    width: 4rem;
+    height: 2rem;
+    background-color: rgb(101, 199, 101);
+    text-align: center;
+    cursor: pointer;
+    
+
+    
+}
+
+
+.endquizbutton{
+  
+    padding: 1rem;
+    margin-left: 43%;
+    margin-top: 2%;
+    cursor: pointer;
+    background-color: blue;
+  }
+
+  .score-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 40vw;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    z-index: 9999;
+    background-color: rgba(26, 24, 24, 0.175);
+    border-radius: 1rem;
+    border: 2px solid rgb(22, 22, 22);
+  }
+
+
+#scoreHeading{
+     
+    font-size: xx-large;
+    margin-bottom: 1%;
+    
+  }
+  #nameScore{
+
+    font-size: x-large;
+    margin-top: 10%;
+  }
+  p{
+    font-size: larger;
+    margin-top: 5%;
+  }
+
+
+#score-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#score-buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#score-buttons button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+@media (max-width:290px){
+
+    img{
+        scale: 0.4;
+        margin-left: -50%;
+        padding-left: -5rem;
+    }
+}
+
+@media(max-width:600px){
+#Category-container button{
+
+    font-size: small;
+}
+
+@media(max-width:800px){
+
+.optionbtn{
+    font-size: smaller;
+}
+}
+
+
+
+}
+
+
+@media (max-width: 460px){
+
+   body{
+
+    font-size: smaller;
+    /* display: flex; */
+    justify-content: center;
+   }
+
+   img{
+    margin-left: -12%;
+   }
+
+   #name{
+
+    width: 70%;
+    margin-bottom: 2%;
+   }
+
+   #Category-container button{
+
+    font-size: smaller;
+    width: 70%;
+   }
+  
+   .questionBg{
+     font-size: smaller;
+     /* padding: 0rem 1rem; */
+     padding: 0rem 1rem;
+     
+   }
+
+   .questyle{
+
+    font-size: medium;
+   }
+
+   .optionbtn{
+
+    font-size: small;
+    width: 100%;
+    
+   }
+   .endquizbutton{
+
+    padding: 0.5rem;
+    margin-right: 28%;
+    margin-top: 1rem;
+
+   }
+
+   .score-container{
+
+    width: 70%;
+    margin-left: -20%;
+   }
+
+}
+

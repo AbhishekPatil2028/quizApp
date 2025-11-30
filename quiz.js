@@ -298,17 +298,16 @@ function getName(event){
 console.log("00")
 }
    let paragraphCreated = false;
-function enterName(){
 
+function enterName(){
   let userName= document.getElementById('name')
   const text = userName.value.trim();
-  // if(!text)  alert("please enter name") ;
-
+  
 if(!paragraphCreated){
 
   if(text) {
     
-    const p = document.createElement('p');
+    const p = document.createElement('h2');
     p.textContent =`${text} let's start quiz`;
     p.style.marginTop='0.5rem'
     
@@ -363,7 +362,7 @@ currentCategory=cat;
     quizDiv.className='questionBg'
 
     const questions = allQuestions.filter(q=>q.category === cat);
-    let currentIndex =1;
+    let currentIndex =0 ;
     console.log("1")
       
    const qText = document.getElementById('questionText');
@@ -438,11 +437,8 @@ const homeBtn = document.createElement('button');
 homeBtn.textContent = 'Home';
 homeBtn.id = 'homeBtn';
 homeBtn.onclick = () => {
-  scoreContainer.remove();
-  document.getElementById('quiz-container').style.display = 'block';
-  document.getElementById('name').value = '';
-  document.getElementById('p').innerHTML = '';
-  document.getElementById('Score').textContent = 'Score: 0';
+  location.reload();
+  ;
 };
 
 // Play Again Button
@@ -450,6 +446,8 @@ const playAgainBtn = document.createElement('button');
 playAgainBtn.textContent = 'Play Again';
 playAgainBtn.id = 'playAgainBtn';
 playAgainBtn.onclick = () => {
+
+
   scoreContainer.remove();
   quizCategory(currentCategory); 
   document.getElementById('Score').textContent = 'Score: 0';
@@ -467,7 +465,12 @@ scoreContainer.appendChild(buttonContainer);
     function render(){
       
       const q = questions[currentIndex];
-   
+
+      
+      const categoryHeading = document.getElementById('categoryHeading');
+categoryHeading.textContent = ` ${q.category}`;
+
+  
       qText.textContent = ` Que ${currentIndex +1}:${q.question}`;
        
       qText.className='questyle'

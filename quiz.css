@@ -74,6 +74,17 @@ h5,h3{
 
 }
 
+.category-heading {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  /* margin-left: 10rem; */
+  display: flex;
+  justify-content: center;
+}
+
+
 .timer{
 
 
@@ -86,7 +97,7 @@ h5,h3{
  
 }
 .questionBg {
-  background-color: #f0f8ff; /* आप अपनी पसंद का रंग चुन सकते हैं */
+  background-color: #f0f8ff; 
   padding: 0rem 4rem 2rem;
   border-radius: 8px;
   margin-left: 15%;
@@ -147,15 +158,7 @@ h5,h3{
 
     
 }
-/* .strquizbtn{
 
-    margin-top: 15%;
-    margin-left: 40%;
-    padding: 3rem;
-    background-color: green;
-    cursor: pointer;
-
-} */
 
 .endquizbutton{
   
@@ -199,23 +202,7 @@ h5,h3{
     font-size: larger;
     margin-top: 5%;
   }
-.scoreStyle{
 
-    
-        
-     /* background-color: rgb(36, 194, 128); 
-     color:white;
-     padding: 20px;
-     max-width: 90%;
-     box-sizing: border-box;
-     display: flex;
-     font-size: 24px;
-     text-align: center;
-     max-width: 90%;
-     border-radius: 1rem; */
-
-
-}
 
 #score-buttons {
   display: flex;
@@ -237,6 +224,8 @@ h5,h3{
 #score-buttons button:hover {
   background-color: #45a049;
 }
+
+
 
 
 @media (max-width:290px){
